@@ -51,6 +51,17 @@ Running commands on worker nodes is easy! Replace the node name below and the co
 docker-machine ssh node-2 "ls"
 ```
 
+## faq
+
+### can't join swarm
+
+If you get the following error message follow the solution below.
+
+```
+this node is not a swarm manager. Use "docker swarm init" or "docker swarm join" to connect this node to swarm and try again
+```
+**solution:** run `eval $(docker-machine env node-1)` and try again.
+
 ## todo
 
 - [ ] add tests
