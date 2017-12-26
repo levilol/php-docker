@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+    web:
+        build:
+            context: .
+            dockerfile: docker/nginx/Dockerfile
+        volumes:
+            - .:/var/www/html
+            - ./docker/nginx/app.conf:/etc/nginx/conf.d/app.conf
+            - ./docker/nginx/nginx.crt:/etc/nginx/nginx.crt
+            - ./docker/nginx/nginx.key:/etc/nginx/nginx.key
+            - ./docker/nginx/dhparam.pem:/etc/nginx/dhparam.pem
+        links:
+            - "app:lol_app"
+    app:
+        volumes:
+            - .:/var/www/html
+    lb:
+        links:
+            - "web:app_web"

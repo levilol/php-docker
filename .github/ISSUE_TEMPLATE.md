@@ -1,0 +1,1 @@
+- [ ] I'm prepared to be polite, discuss the issue, and contribute code if I'm able.

@@ -1,0 +1,3 @@
+- [ ] Fork the repo
+- [ ] Create a new branch
+- [ ] Create the pull request

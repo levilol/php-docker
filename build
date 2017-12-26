@@ -1,0 +1,13 @@
+#!/bin/bash
+
+source .env
+
+echo "Building... $TAG"
+
+docker build -f docker/nginx/Dockerfile -t levilol/nginx:$TAG .
+docker build -f docker/php/Dockerfile -t levilol/lol_app:$TAG  .
+docker build -f docker/haproxy/Dockerfile -t levilol/haproxy:$TAG .
+
+docker push levilol/nginx:$TAG
+docker push levilol/lol_app:$TAG
+docker push levilol/haproxy:$TAG
