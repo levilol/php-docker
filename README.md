@@ -5,10 +5,15 @@
 ```bash
 eval $(docker-machine env default)
 docker-compose up
-docker-compose down
 ```
 
 Visit `http://192.168.99.100/` to see what's happening locally.
+
+```bash
+docker-compose down
+```
+
+Now you've taken down the stack.
 
 ## building the swarm
 
