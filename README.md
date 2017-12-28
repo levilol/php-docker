@@ -77,6 +77,12 @@ ERROR: for phpdocker_web_1  Cannot start service web: OCI runtime create failed:
 
 **solution:** run `eval $(docker-machine env default)` and try again.
 
+## demo
+
+Instead of paying for the Droplets to host this sample app I decided to record my terminal while I curl'd the app.
+
+[![asciicast](https://asciinema.org/a/8KJoYkENCrVAHjOb1bf4wYLq7.png)](https://asciinema.org/a/8KJoYkENCrVAHjOb1bf4wYLq7)
+
 ## todo
 
 - [ ] add tests
