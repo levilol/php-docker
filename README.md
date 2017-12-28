@@ -1,5 +1,7 @@
 # app
 
+[Read my blog post about this repo](https://levi.lol/docker-explained-for-php-developers-in-2018/).
+
 ## dev locally
 
 ```bash
