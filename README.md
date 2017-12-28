@@ -62,6 +62,16 @@ this node is not a swarm manager. Use "docker swarm init" or "docker swarm join"
 ```
 **solution:** run `eval $(docker-machine env node-1)` and try again.
 
+### mount directory as file
+
+The following error may have more than one solution.
+
+```
+ERROR: for phpdocker_web_1  Cannot start service web: OCI runtime create failed: container_linux.go:295: starting container process caused "process_linux.go:399: container init caused \"rootfs_linux.go:57: mounting \\\"/Users/levidurfee/Projects/levilol/php-docker/docker/nginx/nginx.key\\\" to rootfs \\\"/var/lib/docker/aufs/mnt/6d22d8efdec1944f3e76ce79ed2ce60aa81aa358e080f22929619d90c21a4825\\\" at \\\"/var/lib/docker/aufs/mnt/6d22d8efdec1944f3e76ce79ed2ce60aa81aa358e080f22929619d90c21a4825/etc/nginx/nginx.key\\\" caused \\\"not a directory\\\"\"": unknown: Are you trying to mount a directory onto a file (or vice-versa)? Check if the specified host path exists and is the expected type
+```
+
+**solution:** run `eval $(docker-machine env default)` and try again.
+
 ## todo
 
 - [ ] add tests
