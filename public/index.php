@@ -14,7 +14,9 @@
                     <h1>App</h1>
                     <p>
                         <small>
+                            
                             App Server: <?php echo gethostname(); ?>
+
                         </small>
                     </p>
                     <p>woo</p>
