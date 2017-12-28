@@ -10,11 +10,7 @@ docker-compose down
 
 Visit `http://192.168.99.100/` to see what's happening locally.
 
-## deploy to swarm
-
-1. `eval $(docker-machine env node-1)`
-2. `./build`
-3. `./deploy`
+## building the swarm
 
 ### creating nodes
 
@@ -51,6 +47,12 @@ Running commands on worker nodes is easy! Replace the node name below and the co
 docker-machine ssh node-2 "ls"
 ```
 
+## deploy to swarm
+
+1. `eval $(docker-machine env node-1)`
+2. `./build`
+3. `./deploy`
+
 ## faq
 
 **toc**
@@ -65,6 +67,7 @@ If you get the following error message follow the solution below.
 ```
 this node is not a swarm manager. Use "docker swarm init" or "docker swarm join" to connect this node to swarm and try again
 ```
+
 **solution:** run `eval $(docker-machine env node-1)` and try again.
 
 ### mount directory as file
@@ -82,7 +85,3 @@ ERROR: for phpdocker_web_1  Cannot start service web: OCI runtime create failed:
 Instead of paying for the Droplets to host this sample app I decided to record my terminal while I curl'd the app.
 
 [![asciicast](https://asciinema.org/a/8KJoYkENCrVAHjOb1bf4wYLq7.png)](https://asciinema.org/a/8KJoYkENCrVAHjOb1bf4wYLq7)
-
-## todo
-
-- [ ] add tests
