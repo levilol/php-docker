@@ -53,6 +53,11 @@ docker-machine ssh node-2 "ls"
 
 ## faq
 
+**toc**
+
+1. [can't join swarm](https://github.com/levilol/php-docker#cant-join-swarm)
+2. [mounting directory as file](https://github.com/levilol/php-docker#mount-directory-as-file)
+
 ### can't join swarm
 
 If you get the following error message follow the solution below.
